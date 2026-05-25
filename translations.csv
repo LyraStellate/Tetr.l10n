@@ -1,0 +1,479 @@
+# TETR.IO 日本語化 翻訳データ
+# フォーマット: en|jp
+# - 通常行          → テキストノードの完全一致で置換
+# - ^ または \ を含む → 正規表現マッチ（jp で $1,$2 使用可）
+# - [*] を含む行     → 段落書き換え（[*] が cheeky スパン位置を示す）
+#   例: prefix [*]        → 段落テキストが prefix で始まる場合に置換
+#   例: prefix [*] suffix → 始まりと終わりの両方が一致する場合に置換
+#   例: [*] suffix        → 段落テキストが suffix で終わる場合に置換
+
+# ── 完全一致 ─────────────────────────────────────────────────────────────────
+
+# Base
+EXIT|終了
+BACK|戻る
+CANCEL|キャンセル
+START|開始
+SPECTATE|観戦
+GOT IT!|確認しました
+RESET|リセット
+
+# 設定項目
+ENABLE|有効
+DISABLE|無効
+NOT ENABLED|有効になっていません
+CHANGE|変更
+ǹ CHANGE|ǹ 変更
+REMOVE|削除
+ǹ REMOVE|ǹ 削除
+SAVE|保存
+ǹ SAVE|ǹ 保存
+NOBODY|なし
+MY FRIENDS|フレンドのみ
+EVERYONE|全員
+NEVER|無効
+WHEN NEEDED|必要時
+ALWAYS|常時
+MINIMAL|最低
+LOW|低
+MEDIUM|中
+HIGH|高
+ULTRA|最高
+WEAK|弱
+STRONG|強
+SLOW|低速
+FAST|高速
+TEST|テスト
+OFF|オフ
+ON|オン
+SOME|制限
+HOLD|ホールド
+TAP|タップ
+STIFF|硬い
+BOUNCY|弾む
+SHAKY|揺れる
+TRANSPARENT|透明
+OPAQUE|不透明
+FAR|遠い
+NEAR|近い
+FEW|少ない
+LOTS|多い
+
+# ゲーム内UI
+joining room…|参加中...
+getting ready to spectate…|観戦の準備中...
+message...|メッセージを入力...
+KEEP HOLDING TO FORFEIT|長押しで降参
+
+# ソーシャル
+PEOPLE|ソーシャル
+FIND SOMEONE...|誰かを見つける...
+ALL|全て
+ONLINE|オンライン
+OFFLINE|オフライン
+BLOCKED|ブロック済み
+You haven't blocked anyone yet.|まだ誰もブロックしていません。
+PROFILE|プロフィール
+GIFT|ギフト
+Please be civil. Staff will never ask for your credentials.|マナーを守ってください。スタッフがあなたの認証情報を尋ねることは決してありません。
+Achievement get!|実績獲得！
+^.* friended you back|あなたをフレンドに追加しました
+added you to their friends list|あなたをフレンドリストに追加しました
+career best|自己ベスト
+^JOINED (\d+) DAYS AGO|$1日前に参加
+^(\d+)\s+HOURS|$1時間
+^(\d+)\s+DAYS|$1日
+^(\d+)\s+YEARS|$1年
+ago|前
+
+INGAME|ゲーム内
+In Menus|メニュー
+Playing|プレイ中：
+Spectating|観戦中：
+JOIN|参加
+
+# Main Menu
+#共通
+LEADERBOARDS|リーダーボード
+Ǳ LEADERBOARDS|Ǳ リーダーボード
+PERSONAL BEST|自己ベスト
+OPTIONS|設定
+    pro mode|プロモード
+    alert on finesse fault|無駄なキー入力時に警告
+    retry on finesse fault|無駄なキー入力時にリトライ
+    stride mode|ストライドモード
+ADVANCED|高度な設定
+    left counter slot 1|左カウンタースロット 1
+    left counter slot 2|左カウンタースロット 2
+    left counter slot 3|左カウンタースロット 3
+    left counter slot 4|左カウンタースロット 4
+    right counter slot|右カウンタースロット
+
+    ---default---|---デフォルト---
+
+press START to begin playing|STARTを押してプレイ開始
+
+MULTIPLAYER|マルチプレイヤー
+play online with friends and foes|友達やライバルとオンラインで対戦
+
+    enter room id or url and hit enter...|部屋IDまたはURLを入力してEnterキーを押してください...
+
+    QUICK PLAY|クイックプレイ
+    scale the tower! how far can you get?|タワーを登りましょう！どこまで行けるでしょうか？
+
+        welcome to the ZENITH TOWER! send lines and KO enemies to scale the tower.|ゼニスタワーへようこそ！ラインを送り、敵をKOしてタワーを登りましょう。
+        the further up the tower, the stronger the opponents!|タワーの上に行くほど、相手は強くなります！
+        leaderboards reset every week, how far can you get?|リーダーボードは毎週リセットされます。頑張って！
+
+        THIS WEEK'S PERSONAL BEST|今週の個人ベスト
+
+        ADD OR REMOVE MODS|MODの追加または削除
+
+        scale the tower!|タワーを登りましょう！
+
+    TETRA LEAGUE|TETRA LEAGUE
+    fight players of your skill in ranked duels|ランクマッチで実力の近いプレイヤーと対戦
+
+        WELCOME TO TETRA LEAGUE|TETRA LEAGUEへようこそ
+        TETRA LEAGUE is a competitive 1v1 mode. win duels against players of similar skill to rank up and conquer the leaderboards!|TETRA LEAGUEは競技性の高い1v1モードです。実力の近いプレイヤーとのデュエルに勝利してランクアップし、リーダーボードを征服しましょう！
+        if you're new to stackers or are feeling rusty, it's a good idea to practice in other modes first.|スタッカーに不慣れな場合や、腕が鈍っていると感じている場合は、最初に他のモードで練習することをお勧めします。
+        make sure you have the time and connection to play! if you leave or disconnect early, you must rejoin immediately or you will be penalized.|プレイするための時間と接続があることを確認してください！早期に退出または切断した場合は、すぐに再参加する必要があります。そうしないとペナルティが課されます。
+
+        ^/(\d+) rating games played|/$1 レート戦プレイ済み
+        play rating games to receive a rating|レート戦をプレイしてレーティングを獲得しましょう
+
+        ^.*IN QUEUE.*| 人がキュー内 -
+        ^.*IN GAME.*| 人がゲーム中
+
+        ENTER MATCHMAKING|マッチメイキング
+        LEAVING EARLY IS PUNISHED|早期退出はペナルティの対象となります
+
+        HOW DOES IT WORK?|ゲームシステム
+        enter matchmaking and you will be matched up with a player of similar skill in a game of 1v1 VERSUS.|マッチメイキングに参加すると、実力の近いプレイヤーと1v1の対戦ゲームでマッチングされます。
+        win games to gain TR and rank up! you must play at least 10 games to see your TR. to get a RANK and enter the GLOBAL LEADERBOARDS, keep playing consistently.|ゲームに勝利してTRを獲得し、ランクアップしましょう！TRを見るには少なくとも10ゲームをプレイする必要があります。RANKを獲得してGLOBAL LEADERBOARDSに入るには、継続的にプレイし続けてください。
+        if you leave the game early at any point, you must rejoin immediately or you will be penalized. go conquer the ranks!|ゲームを早期に退出した場合は、すぐに再参加する必要があります。そうしないとペナルティが課されます。ランクを征服しましょう！
+
+        face off against others and rise up through the ranks!|他のプレイヤーと対戦してランクを上げましょう！
+
+    CUSTOM GAME|カスタムゲーム
+    create public and private rooms to play by your rules|ルールを設定して公開・非公開の部屋を作成
+
+    ROOM LISTING|部屋一覧
+    join public games|公開ゲームに参加
+
+    pick a game mode|ゲームモードを選択
+
+SOLO|シングルプレイヤー
+challenge yourself and top the leaderboards|自分自身との戦いをし、ランキングのトップを目指す
+
+    40 LINES|40 LINES
+    complete 40 lines as quickly as possible|40ラインをできるだけ早くクリアする
+
+        clear 40 lines in the shortest amount of time possible.|できるだけ短い時間で40ラインをクリアしましょう。
+        score doesn't matter here, just go for the world record!|ここではスコアは関係ありません。世界記録を目指しましょう！
+
+    BLITZ|BLITZ
+    a two-minute race against the clock|2分間タイムアタック
+
+        get as many points as possible within 2 minutes!|2分以内にできるだけ多くのポイントを獲得しましょう！
+        clear lines to level up and gain more points and speed!|ラインをクリアしてレベルアップし、より多くのポイントとスピードを獲得しましょう！
+
+    ZEN|ZEN
+    relax or train in this neverending mode|この終わりのないモードでリラックスしたり、練習したりしましょう
+
+        relax or train in a neverending mode! your progress is stored across games.|この終わりのないモードでリラックスしたり、練習したりしましょう！あなたの進行状況はゲームを超えて保存されます。
+        adjust the feel or help train using the ZEN SIDEBAR.|ZENサイドバーを使用して、感触を調整したり、トレーニングに役立てたりしましょう。
+        you can undo and redo placements with CTRL+Z and CTRL+Y!|CTRL+ZとCTRL+Yで配置を元に戻したりやり直したりできます！
+
+    CUSTOM|カスタム
+    play, train and experiment by your rules|自分のルールでプレイ、トレーニング、実験をしましょう
+
+TETRA CHANNEL|TETRA CHANNEL
+leaderboards, achievements, replays and more|ランキング、実績、リプレイなど
+
+    enter replay id, url or username and hit enter...|リプレイID、URL、またはユーザーネームを入力してEnterキーを押してください...
+
+    VISIT THE TETRA CHANNEL SITE|TETRA CHANNEL サイトへ
+    VIEW FULL LEADERBOARDS, COUNTRY LEADERBOARDS, USER PAGES AND MORE|ランキング、国別ランキング、ユーザーページなどを表示
+
+    #Leaderboards
+    GLOBAL LEADERBOARDS FOR 40 LINES, BLITZ AND QUICK PLAY|40 Lines、Blitz、クイックプレイのグローバルランキング
+
+    ME|あなた
+    VIEW YOUR OWN RECORDS AND RECENT GAMES|自分の記録と最近のゲームを表示
+
+    PLAYERS|プレイヤー
+    TETRA LEAGUE LEADERBOARDS AND XP|テトラリーグのランキングとXP
+
+    ACHIEVEMENTS|実績
+    VIEW YOUR ACHIEVEMENTS AND THEIR PROGRESS|実績とその進行状況を表示
+
+CONFIG|設定
+tweak your [*]|TETR.IOの体験をカスタマイズ
+
+    ACCOUNT|アカウント
+    change account settings|アカウント設定を変更
+
+        ORDER HISTORY|注文履歴
+        view previous orders|過去の注文を確認
+
+        You are currently not a supporter.|現在、サポーターではありません。
+        Become a supporter or gift supporter status today and directly support TETR.IO development!|今日、サポーターになったり、サポーターのステータスをギフトして、TETR.IOの開発を直接サポートしましょう！
+
+        SUPPORT OR GIFT|サポートまたはギフト
+
+        LOG OUT ALL|全てログアウト
+        LOG OUT|ログアウト
+
+        AVATAR|アイコン
+            a nice, 2MB max. image to represent yourself, or a generic identicon if none is chosen.|自分を表す、最大2MBの画像。選択しない場合は一般的なアイコンになります。
+
+        BANNER|バナー
+            a nice, 2MB max. image to display behind your profile and|
+            userpage|ユーザーページ
+            . target resolution is 1920x240.|プロフィールやこのページの背景に表示される、最大2MBの画像。推奨解像度は1920x240です。
+            No banner set|バナーが設定されていません
+
+        ABOUT ME|自己紹介
+            write a little something about yourself to display on|
+            your userpage|あなたのプロフィール
+            , or leave this blank to disable. simple markdown allowed.|に表示する自分についての簡単な紹介文を書いてください。空白のままにすると無効になります。シンプルなマークダウンが使用できます。
+            Write something...|自由に記述できます...
+
+        COUNTRY|国
+
+        PRIVACY|プライバシー
+            show total time played on my profile|プロフィールに総プレイ時間を表示する
+            show # of online games won on my profile|プロフィールにオンラインゲームの勝利数を表示する
+            show # of online games played on my profile|プロフィールにオンラインゲームのプレイ数を表示する
+            show my country on my profile|プロフィールに国を表示する
+            enable TETRA LEAGUE chat|TETRA LEAGUEのチャットを有効にする
+
+            WHO CAN ADD ME AS FRIEND|フレンド申請の受信
+                This does not apply retroactively.|これは遡及的には適用されません。
+            WHO CAN SEE WHETHER I'M ONLINE|オンライン状況の視認性
+                e.g. "Online", "Away", "Offline". People who cannot see whether you're online cannot invite you to rooms either.|例：「オンライン」、「離席中」、「オフライン」。あなたのオンライン状況が見えない人は、部屋への招待もできません。
+            WHO CAN SEE WHAT I'M DOING|プレイ状況の視認性
+                e.g. "Playing 40 LINES", "In TETRA LEAGUE queue", "In Menus"|例：「40 LINESをプレイ中」、「TETRA LEAGUEのキューにいる」、「メニューにいる」
+            WHO CAN SEE WHAT ROOM I'M IN|部屋の視認性
+                e.g. "In QUICK PLAY lobby", "In a public custom room". People who can see what room you're in can also quickly join said room. Private rooms are always hidden.|例：「クイックプレイのロビーにいる」、「公開カスタム部屋にいる」。あなたがいる部屋が見える人は、その部屋にすぐに参加することもできます。プライベートルームは常に非表示です。
+            WHO CAN SEND ME DIRECT MESSAGES|DMの受信
+                Direct messages from non-friends show up on the NON-FRIENDS tab in the social overlay.|非フレンドからのダイレクトメッセージは、ソーシャルオーバーレイの非フレンドタブに表示されます。
+            WHO CAN SEND ME INVITES TO ROOMS|部屋への招待の受信
+                To be able to send you an invite, others will also need to be able to see whether you're online.|あなたに招待を送ることができるようにするには、他の人もあなたのオンライン状況を見ることができる必要があります。
+
+        USERNAME|ユーザーネーム
+        this is the name you will show up to others as.|これは他の人に表示されるあなたの名前です。
+
+        EMAIL|メールアドレス
+            this email account will be used for secure account actions, like account recovery.|このメールアドレスは、アカウントの回復などの安全なアカウント操作に使用されます。
+            you do not currently have an email set. if you lose your password, your account cannot be recovered!|現在、メールアドレスが設定されていません。パスワードを失うと、アカウントを回復できなくなります！
+            email|メールアドレス
+
+        PASSWORD|パスワード
+        you can change the password used to log in here.|ここでログインに使用するパスワードを変更できます。
+            your new password|新しいパスワード
+            your new password, again|新しいパスワード（確認）
+
+        TWO-FACTOR AUTHENTICATION|二段階認証
+            two-factor authentication is|二段階認証は
+
+        CONNECTION|接続
+        link other accounts with TETR.IO here, or remove them at any time.|ここで他のアカウントをTETR.IOとリンクするか、いつでも削除できます。
+            LINK|リンク
+            UNLINK|リンク解除
+
+        delete my account|アカウントを削除
+
+    TETR.IO DESKTOP|TETR.IO DESKTOP
+    [*] DESKTOP|TETR.IO デスクトップクライアントの設定を変更する
+
+        #TETR.IO DESKTOP Vn
+        you are using the desktop client! you can adjust its extra options on this page.|デスクトップクライアントを使用しています！このページで追加のオプションを調整できます。
+
+        #Config
+
+            SKIP LOGIN SCREEN|ログイン画面をスキップ
+
+            VSYNC (cap framerate to output)|vsync（出力にフレームレートを合わせる）
+            install updates automatically if possible|可能な場合は自動的にアップデートをインストール
+            enable DISCORD RICH PRESENCE|Discord RPCを有効にする
+            flash taskbar icon|タスクバーアイコンを点滅させる
+            streamer compatibility mode (slow!)|ストリーマー互換モード（高負荷）
+            disable third-party advertisements|サードパーティの広告を無効にする
+
+
+    CONTROLS|操作
+        [NOT SET]|[未設定]
+
+        move falling piece left|テトリミノを左に移動
+        move falling piece right|テトリミノを右に移動
+        soft drop|ソフトドロップ
+        hard drop|ハードドロップ
+        rotate counterclockwise|反時計回りに回転
+        rotate clockwise|時計回りに回転
+        rotate 180|180度回転
+        swap hold piece|ホールド
+        forfeit game|降参
+        retry game|リトライ
+        open chat|チャットを開く
+        pick targeting strategy|ターゲティング戦略を選択
+        targeting strategy even|ターゲティング：均等
+        targeting strategy eliminations|ターゲティング：KO
+        targeting strategy random|ターゲティング：ランダム
+        targeting strategy payback|ターゲティング：復讐
+        move in menus|メニュー移動
+        confirm in menus|メニュー：決定
+        back in menus|メニュー：戻る
+        menus: up|メニュー：上
+        menus: down|メニュー：下
+        menus: left|メニュー：左
+        menus: right|メニュー：右
+        menus: confirm|メニュー：決定
+        menus: back|メニュー：戻る
+        open social overlay|ソーシャルオーバーレイ
+
+        controllers can be set up in CUSTOM controls - just press the controller buttons you wish to bind.|コントローラーはカスタム操作で設定できます - バインドしたいコントローラーボタンを押してください。
+
+        controller sensitivity|コントローラーの感度
+        vibration intensity|振動の強さ
+
+
+    HANDLING|ハンドリング
+
+        prevent accidental hard drops|誤ハードドロップの防止
+        cancel DAS when changing directions|方向転換でDASをキャンセル
+        prefer soft drop over movement|移動よりソフトドロップを優先
+
+        ROTATION BUFFERING (IRS)|回転のバッファリング（IRS）
+        HOLD BUFFERING (IHS)|ホールドのバッファリング（IHS）
+
+    VOLUME & AUDIO|オーディオ
+        TWEAK MUSIC|音楽の調整
+        QUIET|小
+        LOUD|大
+        NO STEREO|ステレオなし
+        SUPER STEREO|スーパーステレオ
+
+        MUSIC|音楽
+        SFX|効果音
+        stereo|STEREO
+
+        scroll to change volume|スクロールで音量を変更
+        mute music when hidden|非表示のときに音楽をミュート
+        hear next pieces|次のテトリミノの音
+        hear other players|他のプレイヤーの音
+        hear attacks|攻撃音
+        hear climb speed changes|登る速度の変化の音
+        do not reset music when retrying|リトライしても音楽をリセットしない
+        disable sound entirely|完全に音を無効にする
+
+    GAMEPLAY|ゲーム内設定
+
+        ACTION TEXT|アクションテキスト
+        #SOME
+        Display only non-distracting action text when doing special attacks.|特殊攻撃を行うときに、気を散らさないアクションテキストのみを表示します。
+
+        board bounciness|ボードの跳ね返り
+        damage shakiness|ダメージ時の揺れ
+        grid visibility|グリッドの視認性
+        board visibility|ボードの視認性
+        shadow visibility|影の視認性
+        board zoom|ボードの拡大率
+
+        show duels side-by-side|デュエルを並べて表示
+        spin board when you T-spin|Tスピンするときにボードを回転させる
+        alert me when i KO someone|KOしたときに通知する
+        enable the fire meter|ダメージメーターを有効にする
+        warn me when i'm in danger|危険なときに警告する
+        colored shadow piece|シャードーのテトリミノを色付きにする
+        gray out locked HOLD piece|ホールドテトリミノをグレーアウトする
+
+    VIDEO & INTERFACE|グラフィックとインターフェース
+
+        GRAPHICS|グラフィック
+        CACHING|キャッシュ
+            BALANCED|バランス
+        WEBGL MODE|WEBGLモード
+
+        particle count|パーティクル数
+        background visibility|背景の視認性
+        bloom filter power|ブルームの強さ
+        chromatic aberration|色収差
+        flashwave power|フラッシュウェーブの強さ
+
+        make [*] run slowly to keep other programs running smoothly|他のプログラムがスムーズに動作するようにTETR.IOを遅くする
+        render at a low resolution|低解像度でレンダリングする
+        less precision on counters|カウンターの精度を下げる
+        always simplify multiplayer thumbnails|マルチプレイヤーのサムネイルを常に簡略化する
+        do not animate background in super lobbies|スーパーラウンジで背景をアニメーションさせない
+        do not animate background in quick play|クイックプレイで背景をアニメーションさせない
+        no background in menus|メニューで背景を表示しない
+        filter profanity in chat|チャットの不適切な言葉をフィルタリングする
+        hide chat when ingame|ゲーム中にチャットを隠す
+        hide room IDs|部屋IDを隠す
+        show emotes in chat|チャットでエモートを表示する
+        show animated emotes in chat|チャットでアニメーションエモートを表示する
+        invert chat colors|チャットの色を反転させる
+        darken screen behind chat|チャットの背後の画面を暗くする
+        keep replay tools open|リプレイツールを開いたままにする
+        hide network warning icons|ネットワーク警告アイコンを隠す
+        warn me when the game is not focused|ゲームがフォーカスされていないときに警告する
+        show the welcome guide|ウェルカムガイドを表示する
+
+    NOTIFICATIONS|通知
+        INGAME & DESKTOP|ゲーム内とデスクトップ
+
+        show desktop notifications|デスクトップ通知を表示する
+        suppress notifications while ingame|ゲーム中は通知を抑制する
+        always play notification sounds at full volume|常に通知音を最大音量で再生する
+
+        NOTIFY ME WHEN A FRIEND GOES ONLINE|フレンドがオンラインになったときに通知する
+        NOTIFY ME WHEN A FRIEND GOES OFFLINE|フレンドがオフラインになったときに通知する
+        NOTIFY ME WHEN A FRIEND SENDS ME A DIRECT MESSAGE|フレンドからのダイレクトメッセージを通知する
+        NOTIFY ME WHEN A NON-FRIEND SENDS ME A DIRECT MESSAGE|フレンド以外からのダイレクトメッセージを通知する
+        NOTIFY ME WHEN SOMEONE INVITES ME TO A ROOM|招待の受信時に通知する
+        OTHER NOTIFICATIONS|その他の通知
+
+    CUSTOMIZATION|カスタマイズ
+
+        use custom background image|カスタム背景画像を使用する
+            background URL (use multiple by separating with commas, confirm with ENTER)|背景URL（複数使用する場合はコンマで区切り、ENTERで確定）
+
+    EXPORT SETTINGS|設定のエクスポート
+    download a .TTC file of your config you can drag into [*]|ダウンロードした.ttcファイルをTETR.IOにドラッグしてインポートします
+
+
+ABOUT|ABOUT
+all about [*]|TETR.IOについて
+
+    puzzle together in this modern yet familiar online stacker. play against friends and foes all over the world, or claim a spot on the leaderboards - the stacker future is yours!|このモダンでありながらもどこか懐かしいオンラインスタッカーで一緒に遊びましょう。世界中の友達やライバルと対戦したり、ランキングのスポットを獲得したり - スタッカーフューチャーはあなたのものです！
+
+EXIT TETR.IO?|TETR.IOを終了しますか？
+
+
+# ── 正規表現（動的コンテンツ） ───────────────────────────────────────────────
+^FLOOR (\d+)$|フロア $1
+^LEVEL (\d+)$|レベル $1
+^ROUND (\d+)$|ラウンド $1
+^ROUND (\d+) OF (\d+)$|ラウンド $1 / $2
+^(\d+) PLAYERS$|$1 プレイヤー
+^(\d+) SPECTATORS?$|$1 人観戦中
+^TOP (\d+)!?$|TOP $1！
+^(\d+)x COMBO$|$1コンボ
+^(\d+)x B2B$|B2B $1連
+^WIN (\d+)\/(\d+)$|$1勝 / $2
+^(\d+) WINS$|$1 勝
+^(\d+) LOSSES$|$1 敗
+^(\d+) LINES?$|$1 ライン
+^(\d+) KO[S]?$|KO $1
+^PLACE #(\d+)$|第 $1 位
+^#(\d+) OVERALL$|総合 第 $1 位
+^(\d+) PLAYERS ONLINE$|$1 人がオンライン
+^(\d+) GAMES PLAYED$|$1 ゲームプレイ済み
+^DOWNLOADING UPDATE\.\.\. ([\d.]+)%$|アップデートをダウンロード中... $1%
+^(\d+) FOLLOWERS?$|$1 フォロワー
+^FOLLOWING (\d+)$|$1 フォロー中
+^COMBO x(\d+)$|コンボ x$1
+^B2B x(\d+)$|B2B x$1
+
